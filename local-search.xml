@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>github-page-setup</title>
+    <link href="/2023/10/10/github-page-setup/"/>
+    <url>/2023/10/10/github-page-setup/</url>
+    
+    <content type="html"><![CDATA[<h1 id="prerequest"><a href="#prerequest" class="headerlink" title="prerequest"></a>prerequest</h1><p>一个github账号<br>nodejs &gt;&#x3D; 14 </p><h1 id="start"><a href="#start" class="headerlink" title="start"></a>start</h1><h2 id="1-建立一个github仓库"><a href="#1-建立一个github仓库" class="headerlink" title="1.建立一个github仓库"></a>1.建立一个github仓库</h2><p><a href="https://github.com/new">建立仓库</a><br>建议仓库命名为<code>&lt;username&gt;.github.io (e.g.) tabbleman.github.io</code><br>然后把这个url复制下来</p><h2 id="2-下载hexo-cli"><a href="#2-下载hexo-cli" class="headerlink" title="2.下载hexo-cli"></a>2.下载hexo-cli</h2><p>前提是已经装好了nodejs, 可以通过<code>node --version</code> 或者 <code>npm --version</code>查看<br><code>npm install hexo-cli -g </code><br>如果安装没问题那么就可以通过<code>hexo -v</code> 查看hexo安装是否没问题。</p><h2 id="3-建立写blog的文件夹"><a href="#3-建立写blog的文件夹" class="headerlink" title="3.建立写blog的文件夹"></a>3.建立写blog的文件夹</h2><p><code>hexo init blog</code>用hexo初始化blog文件夹<br>然后进入文件夹blog, 输入 <code>npm install</code> </p><p>根据<a href="https://hexo.io/zh-tw/docs/configuration">这篇blog</a>, 需要更改<code>_config.yml</code>文件<br>以下是一些需要更改的地方</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#第105行</span><br>deploy:<br>  <span class="hljs-built_in">type</span>: <span class="hljs-string">&#x27;git&#x27;</span><br>  repo: <span class="hljs-string">&#x27;项目url地址&#x27;</span><br>  branch: main <br>  message: <span class="hljs-string">&quot;update blog&quot;</span><br></code></pre></td></tr></table></figure><p>然后输入<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo -d</code>就好了</p><h2 id="撰写blog"><a href="#撰写blog" class="headerlink" title="撰写blog"></a>撰写blog</h2><p><code>hexo new page-name</code>就能建立一个新的blog了。<br>然后编辑<code>source/_posts/page-name.md</code>就能书写blog了</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>github</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>apollo-0</title>
     <link href="/2023/10/09/apollo-0/"/>
     <url>/2023/10/09/apollo-0/</url>

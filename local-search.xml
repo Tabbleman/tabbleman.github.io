@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>ubuntu-installation</title>
+    <link href="/2023/10/10/ubuntu-installation/"/>
+    <url>/2023/10/10/ubuntu-installation/</url>
+    
+    <content type="html"><![CDATA[<h1 id="start"><a href="#start" class="headerlink" title="start"></a>start</h1><p>建议使用window下的rufus制作启动盘</p><ul><li><a href="https://rufus.ie/">rufus</a></li><li><a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/">ubuntu iso</a></li></ul><p>然后插入u盘，用rufus制作启动盘。插上u盘进入bios关闭<code>secure boot</code>并且把u盘启动项调高。<br>然后选择Ubuntu(save graphic)即可进入安装界面。</p><h1 id="installation"><a href="#installation" class="headerlink" title="installation"></a>installation</h1><p>进入安装界面以后，建议用以下步骤选择：</p><ul><li>语言： English, Install Ubuntu </li><li>Keyboard Layout: English(US)</li><li>wifi (可以不连接)</li><li>minimal Installation , Download updates while installing Ubuntu</li><li>Install Ubuntu alongside with window boot manager(如果是专门选了一个盘放ubuntu，那么就可以erase disk and install Ubuntu)</li><li>时区: shanghai</li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>env-setup</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>boot-hell</title>
     <link href="/2023/10/10/boot-hell/"/>
     <url>/2023/10/10/boot-hell/</url>
@@ -50,7 +69,7 @@
     <link href="/2023/10/09/apollo-0/"/>
     <url>/2023/10/09/apollo-0/</url>
     
-    <content type="html"><![CDATA[<h1 id="apollo-env-setup"><a href="#apollo-env-setup" class="headerlink" title="apollo env setup"></a>apollo env setup</h1><p><a href="">link</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="apollo-env-setup"><a href="#apollo-env-setup" class="headerlink" title="apollo env setup"></a>apollo env setup</h1><p><a href="https://apollo.baidu.com/community/article/1030">link</a></p><h2 id="taste-cyber-RT"><a href="#taste-cyber-RT" class="headerlink" title="taste cyber RT"></a>taste cyber RT</h2>]]></content>
     
     
     

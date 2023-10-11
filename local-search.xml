@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>trillium-sync</title>
+    <link href="/2023/10/11/trillium-sync/"/>
+    <url>/2023/10/11/trillium-sync/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Introduce-to-Trillium"><a href="#Introduce-to-Trillium" class="headerlink" title="Introduce to Trillium"></a>Introduce to Trillium</h1><p><a href="https://github.com/zadam/trilium/wiki/">official site</a></p><h1 id="Taste-sync"><a href="#Taste-sync" class="headerlink" title="Taste sync"></a>Taste sync</h1><p>当本地已经部署好了trilium以后，如果在新的电脑上想要同步可以使用trilium的<a href="https://github.com/zadam/trilium/wiki/Synchronization">同步</a>功能。</p><h2 id="prerequest"><a href="#prerequest" class="headerlink" title="prerequest"></a>prerequest</h2><p>需要有一个云服务器，在这里用x.x.x.x代替。<br><a href="https://github.com/zadam/trilium/wiki/Server-installation">官方doc</a><br>按照以下步骤进行也可以</p><ol><li>在服务器下载trillium的<a href="https://github.com/zadam/trilium/releases">服务器</a>版，注意，服务器版本尽量根你原来的trillium版本一样，否则有什么ub我也不知道。</li><li>然后更改<code>config.ini</code>里面<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">[General]<br>noAuthentication=<span class="hljs-literal">true</span><br>...<br><span class="hljs-comment"># port设置成80端口可以省去配置nginx反向代理的过程</span><br>port=80 <br></code></pre></td></tr></table></figure></li><li>然后<code>nohup ./trillium.sh &amp; </code>就完成在服务器端的配置</li><li>然后可以通过访问<code>x.x.x.x</code>来查看你部署完的服务器，对着英文选一下就行。</li><li>在本地可以点击左上角的那个叶子，进入<code>Options-&gt;Sync</code>配置服务器地址。</li></ol>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>env-setup</tag>
+      
+      <tag>trillium</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>ubuntu-installation</title>
     <link href="/2023/10/10/ubuntu-installation/"/>
     <url>/2023/10/10/ubuntu-installation/</url>
@@ -23,17 +44,17 @@
   
   
   <entry>
-    <title>boot-hell</title>
-    <link href="/2023/10/10/boot-hell/"/>
-    <url>/2023/10/10/boot-hell/</url>
+    <title>daily</title>
+    <link href="/2023/10/10/daily/"/>
+    <url>/2023/10/10/daily/</url>
     
-    <content type="html"><![CDATA[<p>前阵子为了保存我的硬盘，使用dd将我电脑的<code>nvme1n1</code>和<code>nvme0n1</code>全部烧了一个备份出来，<br>当我今天心血来潮把<code>ubuntu.img</code>烧到<code>window</code>的盘里面的时候，出现了boot-hell(本来想称其为os-hell,但是搞不定的原因还是对os的boot了解太浅了)</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash">┌💁  z @ 💻  z <span class="hljs-keyword">in</span> 📁  tabbleman.github.io<br>└❯ sudo su<br>root@z:/home/z/projects/my_git/blog/tabbleman.github.io<span class="hljs-comment"># history | grep dd</span><br>  128  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=/dev/nvme0n1p2 of=/media/z/Cheems/ubuntu.iso status=progress<br>  131  <span class="hljs-built_in">dd</span> bs=40960 <span class="hljs-keyword">if</span>=/dev/nvme0n1 of=/media/z/Cheems/ubuntu.iso status=progress<br>  133  <span class="hljs-built_in">dd</span> bs=32M <span class="hljs-keyword">if</span>=/dev/nvme0n1 of=/media/z/Cheems/ubuntu.img status=progress<br>  138  <span class="hljs-built_in">dd</span> bs=32M <span class="hljs-keyword">if</span>=/dev/nvme1n1 of=/media/z/Cheems/window.iso status=progress<br>  141  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=window.iso of=/dev/nvme1n1 bs=32M status=progress<br>  142  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=ubuntu.iso of=/dev/nvme1n1 bs=32M status=progress<br>  144  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=ubuntu.img of=/dev/nvme1n1 bs=32M status=progress<br></code></pre></td></tr></table></figure><p>update:<br>2023-10-10-16:47完成将<code>window.img</code>重新烧回原来window，希望能好。。。<br>update:<br>2023-10-10-19:24成功恢复window，应该是<code>window boot manager</code>发现了原来是window的地方变成了ubuntu导致引导失败。准备在别的电脑再试试</p>]]></content>
+    <content type="html"><![CDATA[<p>前阵子为了保存我的硬盘，使用dd将我电脑的<code>nvme1n1</code>和<code>nvme0n1</code>全部烧了一个备份出来，<br>当我今天心血来潮把<code>ubuntu.img</code>烧到<code>window</code>的盘里面的时候，出现了boot-hell(本来想称其为os-hell,但是搞不定的原因还是对os的boot了解太浅了)</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash">┌💁  z @ 💻  z <span class="hljs-keyword">in</span> 📁  tabbleman.github.io<br>└❯ sudo su<br>root@z:/home/z/projects/my_git/blog/tabbleman.github.io<span class="hljs-comment"># history | grep dd</span><br>  128  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=/dev/nvme0n1p2 of=/media/z/Cheems/ubuntu.iso status=progress<br>  131  <span class="hljs-built_in">dd</span> bs=40960 <span class="hljs-keyword">if</span>=/dev/nvme0n1 of=/media/z/Cheems/ubuntu.iso status=progress<br>  133  <span class="hljs-built_in">dd</span> bs=32M <span class="hljs-keyword">if</span>=/dev/nvme0n1 of=/media/z/Cheems/ubuntu.img status=progress<br>  138  <span class="hljs-built_in">dd</span> bs=32M <span class="hljs-keyword">if</span>=/dev/nvme1n1 of=/media/z/Cheems/window.iso status=progress<br>  141  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=window.iso of=/dev/nvme1n1 bs=32M status=progress<br>  142  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=ubuntu.iso of=/dev/nvme1n1 bs=32M status=progress<br>  144  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=ubuntu.img of=/dev/nvme1n1 bs=32M status=progress<br></code></pre></td></tr></table></figure><p>update:<br>2023-10-10-16:47完成将<code>window.img</code>重新烧回原来window，希望能好。。。<br>update:<br>2023-10-10-19:24成功恢复window，应该是<code>window boot manager</code>发现了原来是window的地方变成了ubuntu导致引导失败。准备在别的电脑再试试</p><p>今日帮朋友装apollo aem的gpu支持的时候，又被nvidia的显卡驱动给恶心坏了。nvidia的驱动太神奇了,进recovery好几次都黑屏了, 在禁用nouveau和换<code>display manager</code>无果以后，彻底放弃了。。。</p>]]></content>
     
     
     
     <tags>
       
-      <tag>trivia</tag>
+      <tag>daily</tag>
       
     </tags>
     

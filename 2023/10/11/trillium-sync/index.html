@@ -16,24 +16,23 @@
   <meta name="author" content="tabbleman">
   <meta name="keywords" content="">
   
-    <meta name="description" content="prerequest一个github账号nodejs &gt;&#x3D; 14  start1.建立一个github仓库建立仓库建议仓库命名为&lt;username&gt;.github.io (e.g.) tabbleman.github.io然后把这个url复制下来 2.下载hexo-cli前提是已经装好了nodejs, 可以通过node --version 或者 npm --versio">
+    <meta name="description" content="Introduce to Trilliumofficial site Taste sync当本地已经部署好了trilium以后，如果在新的电脑上想要同步可以使用trilium的同步功能。 prerequest需要有一个云服务器，在这里用x.x.x.x代替。官方doc按照以下步骤进行也可以  在服务器下载trillium的服务器版，注意，服务器版本尽量根你原来的trillium版本一样，否则有什么u">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github-page-setup">
-<meta property="og:url" content="http://tabbleman.github.io/2023/10/10/github-page-setup/index.html">
+<meta property="og:title" content="trillium-sync">
+<meta property="og:url" content="http://tabbleman.github.io/2023/10/11/trillium-sync/index.html">
 <meta property="og:site_name" content="Tabbleman">
-<meta property="og:description" content="prerequest一个github账号nodejs &gt;&#x3D; 14  start1.建立一个github仓库建立仓库建议仓库命名为&lt;username&gt;.github.io (e.g.) tabbleman.github.io然后把这个url复制下来 2.下载hexo-cli前提是已经装好了nodejs, 可以通过node --version 或者 npm --versio">
+<meta property="og:description" content="Introduce to Trilliumofficial site Taste sync当本地已经部署好了trilium以后，如果在新的电脑上想要同步可以使用trilium的同步功能。 prerequest需要有一个云服务器，在这里用x.x.x.x代替。官方doc按照以下步骤进行也可以  在服务器下载trillium的服务器版，注意，服务器版本尽量根你原来的trillium版本一样，否则有什么u">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-10-10T05:17:24.000Z">
-<meta property="article:modified_time" content="2023-10-10T08:34:54.992Z">
+<meta property="article:published_time" content="2023-10-11T04:28:24.000Z">
+<meta property="article:modified_time" content="2023-10-11T05:03:50.405Z">
 <meta property="article:author" content="tabbleman">
 <meta property="article:tag" content="env-setup">
-<meta property="article:tag" content="github">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="trillium">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>github-page-setup - Tabbleman</title>
+  <title>trillium-sync - Tabbleman</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +198,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="github-page-setup"></span>
+            <span id="subtitle" data-typed-text="trillium-sync"></span>
           
         </div>
 
@@ -210,8 +209,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-10 13:17" pubdate>
-          October 10, 2023 pm
+        <time datetime="2023-10-11 12:28" pubdate>
+          October 11, 2023 pm
         </time>
       </span>
     
@@ -222,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          797 words
+          405 words
         
       </span>
     
@@ -233,7 +232,7 @@
         
         
         
-          7 mins
+          4 mins
         
       </span>
     
@@ -270,23 +269,21 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">github-page-setup</h1>
+            <h1 id="seo-header">trillium-sync</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="prerequest"><a href="#prerequest" class="headerlink" title="prerequest"></a>prerequest</h1><p>一个github账号<br>nodejs &gt;&#x3D; 14 </p>
-<h1 id="start"><a href="#start" class="headerlink" title="start"></a>start</h1><h2 id="1-建立一个github仓库"><a href="#1-建立一个github仓库" class="headerlink" title="1.建立一个github仓库"></a>1.建立一个github仓库</h2><p><a target="_blank" rel="noopener" href="https://github.com/new">建立仓库</a><br>建议仓库命名为<code>&lt;username&gt;.github.io (e.g.) tabbleman.github.io</code><br>然后把这个url复制下来</p>
-<h2 id="2-下载hexo-cli"><a href="#2-下载hexo-cli" class="headerlink" title="2.下载hexo-cli"></a>2.下载hexo-cli</h2><p>前提是已经装好了nodejs, 可以通过<code>node --version</code> 或者 <code>npm --version</code>查看<br><code>npm install hexo-cli -g </code><br>如果安装没问题那么就可以通过<code>hexo -v</code> 查看hexo安装是否没问题。</p>
-<h2 id="3-建立写blog的文件夹"><a href="#3-建立写blog的文件夹" class="headerlink" title="3.建立写blog的文件夹"></a>3.建立写blog的文件夹</h2><p><code>hexo init blog</code>用hexo初始化blog文件夹<br>然后进入文件夹blog, 输入 <code>npm install</code> </p>
-<p>根据<a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/configuration">这篇blog</a>, 需要更改<code>_config.yml</code>文件<br>以下是一些需要更改的地方</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#第105行</span><br>deploy:<br>  <span class="hljs-built_in">type</span>: <span class="hljs-string">&#x27;git&#x27;</span><br>  repo: <span class="hljs-string">&#x27;项目url地址&#x27;</span><br>  branch: main <br>  message: <span class="hljs-string">&quot;update blog&quot;</span><br></code></pre></td></tr></table></figure>
-<p>然后输入<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo -d</code>就好了</p>
-<p>接下来输入<code>hexo s</code>就可以在本地<code>http://localhost:4000/</code>看到已经部署的blog</p>
-<h2 id="撰写blog"><a href="#撰写blog" class="headerlink" title="撰写blog"></a>撰写blog</h2><p><code>hexo new page-name</code>就能建立一个新的blog了。(page-name)是要写的blog的名字<br>然后编辑<code>source/_posts/page-name.md</code>就能书写blog了<br>建议将一下内容添加成一个sh脚本</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#! /usr/bin/bash </span><br>hexo clean <br>hexo g <br>hexo d <br><span class="hljs-keyword">if</span> [ $? -eq 0 ]; <span class="hljs-keyword">then</span><br>  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Deploy completed successfully.&quot;</span><br><span class="hljs-keyword">else</span><br>  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Deploy failed.&quot;</span><br><span class="hljs-keyword">fi</span><br></code></pre></td></tr></table></figure>
-
-
+                <h1 id="Introduce-to-Trillium"><a href="#Introduce-to-Trillium" class="headerlink" title="Introduce to Trillium"></a>Introduce to Trillium</h1><p><a target="_blank" rel="noopener" href="https://github.com/zadam/trilium/wiki/">official site</a></p>
+<h1 id="Taste-sync"><a href="#Taste-sync" class="headerlink" title="Taste sync"></a>Taste sync</h1><p>当本地已经部署好了trilium以后，如果在新的电脑上想要同步可以使用trilium的<a target="_blank" rel="noopener" href="https://github.com/zadam/trilium/wiki/Synchronization">同步</a>功能。</p>
+<h2 id="prerequest"><a href="#prerequest" class="headerlink" title="prerequest"></a>prerequest</h2><p>需要有一个云服务器，在这里用x.x.x.x代替。<br><a target="_blank" rel="noopener" href="https://github.com/zadam/trilium/wiki/Server-installation">官方doc</a><br>按照以下步骤进行也可以</p>
+<ol>
+<li>在服务器下载trillium的<a target="_blank" rel="noopener" href="https://github.com/zadam/trilium/releases">服务器</a>版，注意，服务器版本尽量根你原来的trillium版本一样，否则有什么ub我也不知道。</li>
+<li>然后更改<code>config.ini</code>里面<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">[General]<br>noAuthentication=<span class="hljs-literal">true</span><br>...<br><span class="hljs-comment"># port设置成80端口可以省去配置nginx反向代理的过程</span><br>port=80 <br></code></pre></td></tr></table></figure></li>
+<li>然后<code>nohup ./trillium.sh &amp; </code>就完成在服务器端的配置</li>
+<li>然后可以通过访问<code>x.x.x.x</code>来查看你部署完的服务器，对着英文选一下就行。</li>
+<li>在本地可以点击左上角的那个叶子，进入<code>Options-&gt;Sync</code>配置服务器地址。</li>
+</ol>
 
                 
               </div>
@@ -301,9 +298,7 @@
       
         <a href="/tags/env-setup/" class="print-no-link">#env-setup</a>
       
-        <a href="/tags/github/" class="print-no-link">#github</a>
-      
-        <a href="/tags/hexo/" class="print-no-link">#hexo</a>
+        <a href="/tags/trillium/" class="print-no-link">#trillium</a>
       
     </div>
   
@@ -315,8 +310,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>github-page-setup</div>
-      <div>http://tabbleman.github.io/2023/10/10/github-page-setup/</div>
+      <div>trillium-sync</div>
+      <div>http://tabbleman.github.io/2023/10/11/trillium-sync/</div>
     </div>
     <div class="license-meta">
       
@@ -328,7 +323,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>October 10, 2023</div>
+          <div>October 11, 2023</div>
         </div>
       
       
@@ -360,18 +355,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/10/daily/" title="daily">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">daily</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/10/09/apollo-0/" title="apollo-0">
-                        <span class="hidden-mobile">apollo-0</span>
+                      <a href="/2023/10/10/ubuntu-installation/" title="ubuntu-installation">
+                        <span class="hidden-mobile">ubuntu-installation</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

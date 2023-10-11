@@ -90,7 +90,7 @@
     <link href="/2023/10/09/apollo-0/"/>
     <url>/2023/10/09/apollo-0/</url>
     
-    <content type="html"><![CDATA[<h1 id="apollo-env-setup"><a href="#apollo-env-setup" class="headerlink" title="apollo env setup"></a>apollo env setup</h1><p><a href="https://apollo.baidu.com/community/article/1030">link</a></p><h2 id="taste-cyber-RT"><a href="#taste-cyber-RT" class="headerlink" title="taste cyber RT"></a>taste cyber RT</h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="apollo-env-setup"><a href="#apollo-env-setup" class="headerlink" title="apollo env setup"></a>apollo env setup</h1><p><a href="https://apollo.baidu.com/community/article/1030">link1</a><br><a href="https://apollo.baidu.com/community/article/1031">link2</a></p><h2 id="场景的同步"><a href="#场景的同步" class="headerlink" title="场景的同步"></a>场景的同步</h2><p>可以进入<a href="https://apollo.baidu.com/workspace">工作台</a>创建场景集，然后通过<a href="https://apollo.baidu.com/community/article/104">同步场景</a>生成同步的命令，在容器运行即可同步。<br>另外也可以在场景添加&#x2F;编辑自己的<a href="https://apollo.baidu.com/workspace/scenario-management">场景集</a></p><h2 id="仿真调试-绕车实验"><a href="#仿真调试-绕车实验" class="headerlink" title="仿真调试(绕车实验)"></a>仿真调试(绕车实验)</h2>]]></content>
     
     
     

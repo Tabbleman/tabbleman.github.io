@@ -65,25 +65,6 @@
   
   
   <entry>
-    <title>daily</title>
-    <link href="/2023/10/10/daily/"/>
-    <url>/2023/10/10/daily/</url>
-    
-    <content type="html"><![CDATA[<p>前阵子为了保存我的硬盘，使用dd将我电脑的<code>nvme1n1</code>和<code>nvme0n1</code>全部烧了一个备份出来，<br>当我今天心血来潮把<code>ubuntu.img</code>烧到<code>window</code>的盘里面的时候，出现了boot-hell(本来想称其为os-hell,但是搞不定的原因还是对os的boot了解太浅了)</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash">┌💁  z @ 💻  z <span class="hljs-keyword">in</span> 📁  tabbleman.github.io<br>└❯ sudo su<br>root@z:/home/z/projects/my_git/blog/tabbleman.github.io<span class="hljs-comment"># history | grep dd</span><br>  128  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=/dev/nvme0n1p2 of=/media/z/Cheems/ubuntu.iso status=progress<br>  131  <span class="hljs-built_in">dd</span> bs=40960 <span class="hljs-keyword">if</span>=/dev/nvme0n1 of=/media/z/Cheems/ubuntu.iso status=progress<br>  133  <span class="hljs-built_in">dd</span> bs=32M <span class="hljs-keyword">if</span>=/dev/nvme0n1 of=/media/z/Cheems/ubuntu.img status=progress<br>  138  <span class="hljs-built_in">dd</span> bs=32M <span class="hljs-keyword">if</span>=/dev/nvme1n1 of=/media/z/Cheems/window.iso status=progress<br>  141  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=window.iso of=/dev/nvme1n1 bs=32M status=progress<br>  142  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=ubuntu.iso of=/dev/nvme1n1 bs=32M status=progress<br>  144  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=ubuntu.img of=/dev/nvme1n1 bs=32M status=progress<br></code></pre></td></tr></table></figure><p>update:<br>2023-10-10-16:47完成将<code>window.img</code>重新烧回原来window，希望能好。。。<br>update:<br>2023-10-10-19:24成功恢复window，应该是<code>window boot manager</code>发现了原来是window的地方变成了ubuntu导致引导失败。准备在别的电脑再试试</p><p>今日帮朋友装apollo aem的gpu支持的时候，又被nvidia的显卡驱动给恶心坏了。nvidia的驱动太神奇了,进recovery好几次都黑屏了, 在禁用nouveau和换<code>display manager</code>无果以后，彻底放弃了。。。</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>daily</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>github-page-setup</title>
     <link href="/2023/10/10/github-page-setup/"/>
     <url>/2023/10/10/github-page-setup/</url>

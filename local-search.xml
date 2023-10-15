@@ -4,17 +4,19 @@
   
   
   <entry>
-    <title>Sat Oct 14 2023 08:00:00 GMT+0800 (China Standard Time)</title>
-    <link href="/2023/10/14/daily/2023-10-14/"/>
-    <url>/2023/10/14/daily/2023-10-14/</url>
+    <title>taste-ncnn</title>
+    <link href="/2023/10/15/taste-ncnn/"/>
+    <url>/2023/10/15/taste-ncnn/</url>
     
-    <content type="html"><![CDATA[<h1 id="今日"><a href="#今日" class="headerlink" title="今日"></a>今日</h1><p>突发奇想，想到了现在我使用的是x11的图形显示服务器，但是马上就要过期了，所以打算更换到wayland</p><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>于是我就速速找了操作指南<br><a href="https://beebom.com/how-switch-between-wayland-xorg-ubuntu/">page1</a><br><a href="https://linuxconfig.org/how-to-enable-disable-wayland-on-ubuntu-20-04-desktop">page2</a><br>照猫画虎以后，当我兴致勃勃的重启以后，查看我的<code>XDG_SESSION_TYPE</code></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">┌💁  z @ 💻  z <span class="hljs-keyword">in</span> 📁  tabbleman.github.io<br>└❯ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$XDG_SESSION_TYPE</span><br>x11<br></code></pre></td></tr></table></figure><p>我：。。。<br>在搜寻了这个<a href="https://askubuntu.com/questions/1237050/cannot-login-wayland-sessions-on-20-04">blog</a>之后，尝试加一个user，看看在那个user是否能使用wayland<br>试完以后发现还是不行。。。<br>在查看debian文档以后，尝试换了一个dm，安装完<code>sddm</code>并且重启以后，终于在登陆界面显示了wayland的选项，可惜，完全进不了页面。。。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h1><p>最近正好在玩unet,学长之前又推荐给我一个著名的神经网络前向传播库<a href="https://github.com/Tencent/ncnn.git">ncnn</a>,本来想着能否帮着改改,可惜心有余而力不足。。。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs bash">┌💁  z @ 💻  z <span class="hljs-keyword">in</span> 📁  src on 🌿  master → origin ✓<br>└❯ scc<br>───────────────────────────────────────────────────────────────────────────────<br>Language                 Files     Lines   Blanks  Comments     Code Complexity<br>───────────────────────────────────────────────────────────────────────────────<br>C Header                   742    299036    41771     18106   239159      17181<br>C++                        427    230983    34141     10013   186829      52319<br>GLSL                       393     69340    10005      5925    53410       8128<br>Autoconf                     8       367       39       120      208          2<br>CMake                        1       602       58        19      525         83<br>───────────────────────────────────────────────────────────────────────────────<br>Total                     1571    600328    86014     34183   480131      77713<br>───────────────────────────────────────────────────────────────────────────────<br>Estimated Cost to Develop (organic) <span class="hljs-variable">$17</span>,661,315<br>Estimated Schedule Effort (organic) 40.95 months<br>Estimated People Required (organic) 38.31<br>───────────────────────────────────────────────────────────────────────────────<br>Processed 23147526 bytes, 23.148 megabytes (SI)<br>───────────────────────────────────────────────────────────────────────────────<br><br></code></pre></td></tr></table></figure><p>所以打算为社区建立一点点微不足道的贡献，用ncnn写个unet试一下。</p><h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p><code>Linux z 5.15.0-84-generic #93~20.04.1-Ubuntu SMP Wed Sep 6 16:15:40 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux</code></p><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>经典的unet模型就不放在这里了</p>]]></content>
     
     
     
     <tags>
       
-      <tag>daily</tag>
+      <tag>ncnn</tag>
+      
+      <tag>tutorial</tag>
       
     </tags>
     
@@ -23,9 +25,72 @@
   
   
   <entry>
-    <title>20231013</title>
-    <link href="/2023/10/13/daily/2023-10-13/"/>
-    <url>/2023/10/13/daily/2023-10-13/</url>
+    <title>github-page-setup</title>
+    <link href="/2023/10/15/env-github-page-setup/"/>
+    <url>/2023/10/15/env-github-page-setup/</url>
+    
+    <content type="html"><![CDATA[<h1 id="prerequest"><a href="#prerequest" class="headerlink" title="prerequest"></a>prerequest</h1><p>一个<a href="https://github.com/">github</a>账号<br><a href="http://nodejs.org/">nodejs</a> &gt;&#x3D; 14<br><a href="https://git-scm.com/downloads">git</a></p><h1 id="start"><a href="#start" class="headerlink" title="start"></a>start</h1><h2 id="1-建立一个github仓库"><a href="#1-建立一个github仓库" class="headerlink" title="1.建立一个github仓库"></a>1.建立一个github仓库</h2><p><a href="https://github.com/new">建立仓库</a><br>建议仓库命名为<code>&lt;username&gt;.github.io (e.g.) tabbleman.github.io</code><br>然后把这个url复制下来</p><h2 id="2-下载hexo-cli-和-hexo-deployer-git"><a href="#2-下载hexo-cli-和-hexo-deployer-git" class="headerlink" title="2.下载hexo-cli 和 hexo-deployer-git"></a>2.下载hexo-cli 和 hexo-deployer-git</h2><p>前提是已经装好了nodejs, 可以通过<code>node --version</code> 或者 <code>npm --version</code>查看<br><code>npm install hexo-cli hexo-deployer-git -g </code><br>如果安装没问题那么就可以通过<code>hexo -v</code> 查看hexo安装是否没问题。</p><h2 id="3-建立写blog的文件夹"><a href="#3-建立写blog的文件夹" class="headerlink" title="3.建立写blog的文件夹"></a>3.建立写blog的文件夹</h2><p><code>hexo init blog</code>用hexo初始化blog文件夹<br>然后进入文件夹blog, 输入 <code>npm install</code> </p><p>根据<a href="https://hexo.io/zh-tw/docs/configuration">这篇blog</a>, 需要更改<code>_config.yml</code>文件<br>以下是一些需要更改的地方</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#第105行</span><br>deploy:<br>  <span class="hljs-built_in">type</span>: <span class="hljs-string">&#x27;git&#x27;</span><br>  repo: <span class="hljs-string">&#x27;项目url地址&#x27;</span><br>  branch: main <br>  message: <span class="hljs-string">&quot;update blog&quot;</span><br></code></pre></td></tr></table></figure><p>然后输入<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo -d</code>就好了</p><p>接下来输入<code>hexo s</code>就可以在本地<code>http://localhost:4000/</code>看到已经部署的blog</p><h2 id="撰写blog"><a href="#撰写blog" class="headerlink" title="撰写blog"></a>撰写blog</h2><p><code>hexo new page-name</code>就能建立一个新的blog了。(page-name)是要写的blog的名字<br>然后编辑<code>source/_posts/page-name.md</code>就能书写blog了<br>建议将一下内容添加成一个sh脚本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#! /usr/bin/bash </span><br>hexo clean <br>hexo g <br>hexo d <br><span class="hljs-keyword">if</span> [ $? -eq 0 ]; <span class="hljs-keyword">then</span><br>  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Deploy completed successfully.&quot;</span><br><span class="hljs-keyword">else</span><br>  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Deploy failed.&quot;</span><br><span class="hljs-keyword">fi</span><br></code></pre></td></tr></table></figure><h2 id="What’s-more"><a href="#What’s-more" class="headerlink" title="What’s more"></a>What’s more</h2><p>如果想要页面变得美观，可以使用<code>fluid</code>主题～<br>需要使用npm下载<code>npm install --save hexo-theme-fluid</code><br>然后更改<code>blog/_config.yml</code>99行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">...<br>theme: fluid <span class="hljs-comment"># 更改成fluid</span><br>...<br></code></pre></td></tr></table></figure><p>在<code>node_modules/hexo-theme-fluid</code>里面<code>_config.yml</code>可以自行更改主页的信息，比如加一个isla.jpg:)</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>tutorial</tag>
+      
+      <tag>env-setup</tag>
+      
+      <tag>github</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>trillium-sync</title>
+    <link href="/2023/10/15/env-trillium-sync/"/>
+    <url>/2023/10/15/env-trillium-sync/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Introduce-to-Trillium"><a href="#Introduce-to-Trillium" class="headerlink" title="Introduce to Trillium"></a>Introduce to Trillium</h1><p><a href="https://github.com/zadam/trilium/wiki/">official site</a></p><h1 id="Taste-sync"><a href="#Taste-sync" class="headerlink" title="Taste sync"></a>Taste sync</h1><p>当本地已经部署好了trilium以后，如果在新的电脑上想要同步可以使用trilium的<a href="https://github.com/zadam/trilium/wiki/Synchronization">同步</a>功能。</p><h2 id="prerequest"><a href="#prerequest" class="headerlink" title="prerequest"></a>prerequest</h2><p>需要有一个云服务器，在这里用x.x.x.x代替。<br><a href="https://github.com/zadam/trilium/wiki/Server-installation">官方doc</a><br>按照以下步骤进行也可以</p><ol><li>在服务器下载trillium的<a href="https://github.com/zadam/trilium/releases">服务器</a>版，注意，服务器版本尽量根你原来的trillium版本一样，否则有什么ub我也不知道。</li><li>然后更改<code>config.ini</code>里面<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">[General]<br>noAuthentication=<span class="hljs-literal">true</span><br>...<br><span class="hljs-comment"># port设置成80端口可以省去配置nginx反向代理的过程</span><br>port=80 <br></code></pre></td></tr></table></figure></li><li>然后<code>nohup ./trillium.sh &amp; </code>就完成在服务器端的配置</li><li>然后可以通过访问<code>x.x.x.x</code>来查看你部署完的服务器，对着英文选一下就行。</li><li>在本地可以点击左上角的那个叶子，进入<code>Options-&gt;Sync</code>配置服务器地址。</li></ol>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>env-setup</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Sat Oct 14 2023 08:00:00 GMT+0800 (China Standard Time)</title>
+    <link href="/2023/10/14/daily-2023-10-14/"/>
+    <url>/2023/10/14/daily-2023-10-14/</url>
+    
+    <content type="html"><![CDATA[<h1 id="今日"><a href="#今日" class="headerlink" title="今日"></a>今日</h1><p>突发奇想，想到了现在我使用的是x11的图形显示服务器，但是马上就要过期了，所以打算更换到wayland</p><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>于是我就速速找了操作指南<br><a href="https://beebom.com/how-switch-between-wayland-xorg-ubuntu/">page1</a><br><a href="https://linuxconfig.org/how-to-enable-disable-wayland-on-ubuntu-20-04-desktop">page2</a><br>照猫画虎以后，当我兴致勃勃的重启以后，查看我的<code>XDG_SESSION_TYPE</code></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">┌💁  z @ 💻  z <span class="hljs-keyword">in</span> 📁  tabbleman.github.io<br>└❯ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$XDG_SESSION_TYPE</span><br>x11<br></code></pre></td></tr></table></figure><p>我：。。。<br>在搜寻了这个<a href="https://askubuntu.com/questions/1237050/cannot-login-wayland-sessions-on-20-04">blog</a>之后，尝试加一个user，看看在那个user是否能使用wayland<br>试完以后发现还是不行。。。<br>在查看debian文档以后，尝试换了一个dm，安装完<code>sddm</code>并且重启以后，终于在登陆界面显示了wayland的选项，可惜，完全进不了页面。。。</p><p>暂时只能搁置了。。。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>daily</tag>
+      
+      <tag>todo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Fri Oct 13 2023 00:00:00 GMT+0800 (China Standard Time)</title>
+    <link href="/2023/10/13/daily-2023-10-13/"/>
+    <url>/2023/10/13/daily-2023-10-13/</url>
     
     <content type="html"><![CDATA[<h1 id="今日"><a href="#今日" class="headerlink" title="今日"></a>今日</h1><p>今日向导师进行了周报的汇报，由于周报作的少，周报内容有些做得不完善，就比如汇报比赛的内容，除了比赛赛制，内容，团队进度，少了整理往年的题型。<br>也算是为了以后研究生生涯提前踩了个坑。</p>]]></content>
     
@@ -43,8 +108,8 @@
   
   <entry>
     <title>apollo-0</title>
-    <link href="/2023/10/12/apollo-0/"/>
-    <url>/2023/10/12/apollo-0/</url>
+    <link href="/2023/10/12/apollo-apollo-0/"/>
+    <url>/2023/10/12/apollo-apollo-0/</url>
     
     <content type="html"><![CDATA[<h1 id="apollo-env-setup"><a href="#apollo-env-setup" class="headerlink" title="apollo env setup"></a>apollo env setup</h1><p><a href="https://apollo.baidu.com/community/article/1030">link1</a><br><a href="https://apollo.baidu.com/community/article/1031">link2</a><br><a href="https://apollo.baidu.com/community/cloud-lab">学习资料</a></p><h2 id="场景的同步"><a href="#场景的同步" class="headerlink" title="场景的同步"></a>场景的同步</h2><p>可以进入<a href="https://apollo.baidu.com/workspace">工作台</a>创建场景集，然后通过<a href="https://apollo.baidu.com/community/article/104">同步场景</a>生成同步的命令，在容器运行即可同步。<br>另外也可以在场景添加&#x2F;编辑自己的<a href="https://apollo.baidu.com/workspace/scenario-management">场景集</a></p><h2 id="xh-lab"><a href="#xh-lab" class="headerlink" title="xh-lab"></a>xh-lab</h2><p><a href="https://apollo.baidu.com/community/course/outline/2?activeId=248">教程</a></p><h3 id="0x01-CyberRT-listener-and-talker"><a href="#0x01-CyberRT-listener-and-talker" class="headerlink" title="0x01 CyberRT listener and talker"></a>0x01 CyberRT listener and talker</h3>]]></content>
     
@@ -63,30 +128,9 @@
   
   
   <entry>
-    <title>trillium-sync</title>
-    <link href="/2023/10/11/trillium-sync/"/>
-    <url>/2023/10/11/trillium-sync/</url>
-    
-    <content type="html"><![CDATA[<h1 id="Introduce-to-Trillium"><a href="#Introduce-to-Trillium" class="headerlink" title="Introduce to Trillium"></a>Introduce to Trillium</h1><p><a href="https://github.com/zadam/trilium/wiki/">official site</a></p><h1 id="Taste-sync"><a href="#Taste-sync" class="headerlink" title="Taste sync"></a>Taste sync</h1><p>当本地已经部署好了trilium以后，如果在新的电脑上想要同步可以使用trilium的<a href="https://github.com/zadam/trilium/wiki/Synchronization">同步</a>功能。</p><h2 id="prerequest"><a href="#prerequest" class="headerlink" title="prerequest"></a>prerequest</h2><p>需要有一个云服务器，在这里用x.x.x.x代替。<br><a href="https://github.com/zadam/trilium/wiki/Server-installation">官方doc</a><br>按照以下步骤进行也可以</p><ol><li>在服务器下载trillium的<a href="https://github.com/zadam/trilium/releases">服务器</a>版，注意，服务器版本尽量根你原来的trillium版本一样，否则有什么ub我也不知道。</li><li>然后更改<code>config.ini</code>里面<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">[General]<br>noAuthentication=<span class="hljs-literal">true</span><br>...<br><span class="hljs-comment"># port设置成80端口可以省去配置nginx反向代理的过程</span><br>port=80 <br></code></pre></td></tr></table></figure></li><li>然后<code>nohup ./trillium.sh &amp; </code>就完成在服务器端的配置</li><li>然后可以通过访问<code>x.x.x.x</code>来查看你部署完的服务器，对着英文选一下就行。</li><li>在本地可以点击左上角的那个叶子，进入<code>Options-&gt;Sync</code>配置服务器地址。</li></ol>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>env-setup</tag>
-      
-      <tag>trillium</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>ubuntu-installation</title>
-    <link href="/2023/10/10/ubuntu-installation/"/>
-    <url>/2023/10/10/ubuntu-installation/</url>
+    <link href="/2023/10/10/env-ubuntu-installation/"/>
+    <url>/2023/10/10/env-ubuntu-installation/</url>
     
     <content type="html"><![CDATA[<h1 id="start"><a href="#start" class="headerlink" title="start"></a>start</h1><p>建议使用window下的rufus制作启动盘</p><ul><li><a href="https://rufus.ie/">rufus</a></li><li><a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/">ubuntu iso</a></li></ul><p>然后插入u盘，用rufus制作启动盘。插上u盘进入bios关闭<code>secure boot</code>并且把u盘启动项调高。<br>然后选择Ubuntu(save graphic)即可进入安装界面。</p><h1 id="installation"><a href="#installation" class="headerlink" title="installation"></a>installation</h1><p>进入安装界面以后，建议用以下步骤选择：</p><ul><li>语言： English, Install Ubuntu </li><li>Keyboard Layout: English(US)</li><li>wifi (可以不连接)</li><li>minimal Installation , Download updates while installing Ubuntu</li><li>Install Ubuntu alongside with window boot manager(如果是专门选了一个盘放ubuntu，那么就可以erase disk and install Ubuntu)</li><li>时区: shanghai</li></ul>]]></content>
     
@@ -103,9 +147,9 @@
   
   
   <entry>
-    <title>daily</title>
-    <link href="/2023/10/10/daily/2023-10-10/"/>
-    <url>/2023/10/10/daily/2023-10-10/</url>
+    <title>Tue Oct 10 2023 00:00:00 GMT+0800 (China Standard Time)</title>
+    <link href="/2023/10/10/daily-2023-10-10/"/>
+    <url>/2023/10/10/daily-2023-10-10/</url>
     
     <content type="html"><![CDATA[<p>前阵子为了保存我的硬盘，使用dd将我电脑的<code>nvme1n1</code>和<code>nvme0n1</code>全部烧了一个备份出来，<br>当我今天心血来潮把<code>ubuntu.img</code>烧到<code>window</code>的盘里面的时候，出现了boot-hell(本来想称其为os-hell,但是搞不定的原因还是对os的boot了解太浅了)</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash">┌💁  z @ 💻  z <span class="hljs-keyword">in</span> 📁  tabbleman.github.io<br>└❯ sudo su<br>root@z:/home/z/projects/my_git/blog/tabbleman.github.io<span class="hljs-comment"># history | grep dd</span><br>  128  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=/dev/nvme0n1p2 of=/media/z/Cheems/ubuntu.iso status=progress<br>  131  <span class="hljs-built_in">dd</span> bs=40960 <span class="hljs-keyword">if</span>=/dev/nvme0n1 of=/media/z/Cheems/ubuntu.iso status=progress<br>  133  <span class="hljs-built_in">dd</span> bs=32M <span class="hljs-keyword">if</span>=/dev/nvme0n1 of=/media/z/Cheems/ubuntu.img status=progress<br>  138  <span class="hljs-built_in">dd</span> bs=32M <span class="hljs-keyword">if</span>=/dev/nvme1n1 of=/media/z/Cheems/window.iso status=progress<br>  141  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=window.iso of=/dev/nvme1n1 bs=32M status=progress<br>  142  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=ubuntu.iso of=/dev/nvme1n1 bs=32M status=progress<br>  144  <span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=ubuntu.img of=/dev/nvme1n1 bs=32M status=progress<br></code></pre></td></tr></table></figure><p>update:<br>2023-10-10-16:47完成将<code>window.img</code>重新烧回原来window，希望能好。。。<br>update:<br>2023-10-10-19:24成功恢复window，应该是<code>window boot manager</code>发现了原来是window的地方变成了ubuntu导致引导失败。准备在别的电脑再试试</p><p>今日帮朋友装apollo aem的gpu支持的时候，又被nvidia的显卡驱动给恶心坏了。nvidia的驱动太神奇了,进recovery好几次都黑屏了, 在禁用nouveau和换<code>display manager</code>无果以后，彻底放弃了。。。</p>]]></content>
     
@@ -116,42 +160,6 @@
       <tag>daily</tag>
       
     </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>github-page-setup</title>
-    <link href="/2023/10/10/github-page-setup/"/>
-    <url>/2023/10/10/github-page-setup/</url>
-    
-    <content type="html"><![CDATA[<h1 id="prerequest"><a href="#prerequest" class="headerlink" title="prerequest"></a>prerequest</h1><p>一个<a href="https://github.com/">github</a>账号<br><a href="http://nodejs.org/">nodejs</a> &gt;&#x3D; 14<br><a href="https://git-scm.com/downloads">git</a></p><h1 id="start"><a href="#start" class="headerlink" title="start"></a>start</h1><h2 id="1-建立一个github仓库"><a href="#1-建立一个github仓库" class="headerlink" title="1.建立一个github仓库"></a>1.建立一个github仓库</h2><p><a href="https://github.com/new">建立仓库</a><br>建议仓库命名为<code>&lt;username&gt;.github.io (e.g.) tabbleman.github.io</code><br>然后把这个url复制下来</p><h2 id="2-下载hexo-cli-和-hexo-deployer-git"><a href="#2-下载hexo-cli-和-hexo-deployer-git" class="headerlink" title="2.下载hexo-cli 和 hexo-deployer-git"></a>2.下载hexo-cli 和 hexo-deployer-git</h2><p>前提是已经装好了nodejs, 可以通过<code>node --version</code> 或者 <code>npm --version</code>查看<br><code>npm install hexo-cli hexo-deployer-git -g </code><br>如果安装没问题那么就可以通过<code>hexo -v</code> 查看hexo安装是否没问题。</p><h2 id="3-建立写blog的文件夹"><a href="#3-建立写blog的文件夹" class="headerlink" title="3.建立写blog的文件夹"></a>3.建立写blog的文件夹</h2><p><code>hexo init blog</code>用hexo初始化blog文件夹<br>然后进入文件夹blog, 输入 <code>npm install</code> </p><p>根据<a href="https://hexo.io/zh-tw/docs/configuration">这篇blog</a>, 需要更改<code>_config.yml</code>文件<br>以下是一些需要更改的地方</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#第105行</span><br>deploy:<br>  <span class="hljs-built_in">type</span>: <span class="hljs-string">&#x27;git&#x27;</span><br>  repo: <span class="hljs-string">&#x27;项目url地址&#x27;</span><br>  branch: main <br>  message: <span class="hljs-string">&quot;update blog&quot;</span><br></code></pre></td></tr></table></figure><p>然后输入<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo -d</code>就好了</p><p>接下来输入<code>hexo s</code>就可以在本地<code>http://localhost:4000/</code>看到已经部署的blog</p><h2 id="撰写blog"><a href="#撰写blog" class="headerlink" title="撰写blog"></a>撰写blog</h2><p><code>hexo new page-name</code>就能建立一个新的blog了。(page-name)是要写的blog的名字<br>然后编辑<code>source/_posts/page-name.md</code>就能书写blog了<br>建议将一下内容添加成一个sh脚本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#! /usr/bin/bash </span><br>hexo clean <br>hexo g <br>hexo d <br><span class="hljs-keyword">if</span> [ $? -eq 0 ]; <span class="hljs-keyword">then</span><br>  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Deploy completed successfully.&quot;</span><br><span class="hljs-keyword">else</span><br>  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Deploy failed.&quot;</span><br><span class="hljs-keyword">fi</span><br></code></pre></td></tr></table></figure><h2 id="What’s-more"><a href="#What’s-more" class="headerlink" title="What’s more"></a>What’s more</h2><p>如果想要页面变得美观，可以使用<code>fluid</code>主题～<br>需要使用npm下载<code>npm install --save hexo-theme-fluid</code><br>然后更改<code>blog/_config.yml</code>99行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">...<br>theme: fluid <span class="hljs-comment"># 更改成fluid</span><br>...<br></code></pre></td></tr></table></figure><p>在<code>node_modules/hexo-theme-fluid</code>里面<code>_config.yml</code>可以自行更改主页的信息，比如加一个isla.jpg:)</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>env-setup</tag>
-      
-      <tag>github</tag>
-      
-      <tag>hexo</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>taste-ncnn</title>
-    <link href="/2023/09/27/taste-ncnn/"/>
-    <url>/2023/09/27/taste-ncnn/</url>
-    
-    <content type="html"><![CDATA[<h1 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h1><p>最近正好在玩unet,学长之前又推荐给我一个著名的神经网络前向传播库<a href="https://github.com/Tencent/ncnn.git">ncnn</a>,本来想着能否帮着改改,可惜心有余而力不足。。。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs bash">┌💁  z @ 💻  z <span class="hljs-keyword">in</span> 📁  src on 🌿  master → origin ✓<br>└❯ scc<br>───────────────────────────────────────────────────────────────────────────────<br>Language                 Files     Lines   Blanks  Comments     Code Complexity<br>───────────────────────────────────────────────────────────────────────────────<br>C Header                   742    299036    41771     18106   239159      17181<br>C++                        427    230983    34141     10013   186829      52319<br>GLSL                       393     69340    10005      5925    53410       8128<br>Autoconf                     8       367       39       120      208          2<br>CMake                        1       602       58        19      525         83<br>───────────────────────────────────────────────────────────────────────────────<br>Total                     1571    600328    86014     34183   480131      77713<br>───────────────────────────────────────────────────────────────────────────────<br>Estimated Cost to Develop (organic) <span class="hljs-variable">$17</span>,661,315<br>Estimated Schedule Effort (organic) 40.95 months<br>Estimated People Required (organic) 38.31<br>───────────────────────────────────────────────────────────────────────────────<br>Processed 23147526 bytes, 23.148 megabytes (SI)<br>───────────────────────────────────────────────────────────────────────────────<br><br></code></pre></td></tr></table></figure><p>所以打算为社区建立一点点微不足道的贡献，用ncnn写个unet试一下。</p><h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p><code>Linux z 5.15.0-84-generic #93~20.04.1-Ubuntu SMP Wed Sep 6 16:15:40 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux</code></p><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>经典的unet模型就不放在这里了</p>]]></content>
-    
-    
     
   </entry>
   

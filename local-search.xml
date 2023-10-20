@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>traffic-light</title>
+    <link href="/2023/10/20/apollo-2023-10-20-traffic-light/"/>
+    <url>/2023/10/20/apollo-2023-10-20-traffic-light/</url>
+    
+    <content type="html"><![CDATA[<h1 id="start"><a href="#start" class="headerlink" title="start"></a>start</h1><p>启动dreamview</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">aem start <br>aem enter <br>aem bootstrap <br><br></code></pre></td></tr></table></figure><p>在网页打开，启动Sim_control, PNC monitor<br><img src="/image.png" alt="场景"><br>打开<code>planning, Predicting, routing</code>模块</p><p>打开路由，发送路由请求</p><p>在<code>profile/default/modules/planning/trafficrules/traffic_light/conf</code>中<br>找到.pb.txt的文件，更改<code>stop_distance</code> 然后重启planning模块<br><img src="/image-2.png" alt="tfl config"></p><p>在pnc-monitor可以观测到变化<br><img src="/image-1.png" alt="before"><br><img src="/image-3.png" alt="after"></p><h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>暂时还没看出哪里有变化，即使改变了参数，不知道从哪里看出变化</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>apollo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Mon Oct 16 2023 00:00:00 GMT+0800 (China Standard Time)</title>
     <link href="/2023/10/16/daily-2023-10-16/"/>
     <url>/2023/10/16/daily-2023-10-16/</url>

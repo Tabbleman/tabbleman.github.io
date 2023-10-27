@@ -16,27 +16,22 @@
   <meta name="author" content="tabbleman">
   <meta name="keywords" content="">
   
-    <meta name="description" content="start启动dreamview 1234aem start aem enter aem bootstrap   在网页打开，启动Sim_control, PNC monitor打开planning, Predicting, routing模块 打开路由，发送路由请求 在profile&#x2F;default&#x2F;modules&#x2F;planning&#x2F;trafficrules&#x2F;traffic_light&#x2F;conf">
+    <meta name="description" content="start使用平台：apollo 云平台 workflow在model&#x2F;planning&#x2F;traffic_rules&#x2F;下面新建region_speed的文件夹使用buildtool构建plugin 12345buildtool create --template plugin \                 --namespaces planning \                 --n">
 <meta property="og:type" content="article">
-<meta property="og:title" content="traffic-light">
-<meta property="og:url" content="http://tabbleman.github.io/2023/10/20/apollo-2023-10-20-traffic-light/index.html">
+<meta property="og:title" content="region_speed">
+<meta property="og:url" content="http://tabbleman.github.io/2023/10/27/apollo-2023-10-27-region-speed/index.html">
 <meta property="og:site_name" content="Tabbleman">
-<meta property="og:description" content="start启动dreamview 1234aem start aem enter aem bootstrap   在网页打开，启动Sim_control, PNC monitor打开planning, Predicting, routing模块 打开路由，发送路由请求 在profile&#x2F;default&#x2F;modules&#x2F;planning&#x2F;trafficrules&#x2F;traffic_light&#x2F;conf">
+<meta property="og:description" content="start使用平台：apollo 云平台 workflow在model&#x2F;planning&#x2F;traffic_rules&#x2F;下面新建region_speed的文件夹使用buildtool构建plugin 12345buildtool create --template plugin \                 --namespaces planning \                 --n">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://tabbleman.github.io/image.png">
-<meta property="og:image" content="http://tabbleman.github.io/image-2.png">
-<meta property="og:image" content="http://tabbleman.github.io/image-1.png">
-<meta property="og:image" content="http://tabbleman.github.io/image-3.png">
-<meta property="article:published_time" content="2023-10-20T11:04:43.000Z">
-<meta property="article:modified_time" content="2023-10-20T11:47:33.526Z">
+<meta property="article:published_time" content="2023-10-27T03:02:36.000Z">
+<meta property="article:modified_time" content="2023-10-27T03:33:48.409Z">
 <meta property="article:author" content="tabbleman">
 <meta property="article:tag" content="apollo">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://tabbleman.github.io/image.png">
   
   
   
-  <title>traffic-light - Tabbleman</title>
+  <title>region_speed - Tabbleman</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -202,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="traffic-light"></span>
+            <span id="subtitle" data-typed-text="region_speed"></span>
           
         </div>
 
@@ -213,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-20 19:04" pubdate>
-          October 20, 2023 pm
+        <time datetime="2023-10-27 11:02" pubdate>
+          October 27, 2023 am
         </time>
       </span>
     
@@ -225,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          279 words
+          1.6k words
         
       </span>
     
@@ -236,7 +231,7 @@
         
         
         
-          3 mins
+          14 mins
         
       </span>
     
@@ -273,19 +268,26 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">traffic-light</h1>
+            <h1 id="seo-header">region_speed</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="start"><a href="#start" class="headerlink" title="start"></a>start</h1><p>启动dreamview</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">aem start <br>aem enter <br>aem bootstrap <br><br></code></pre></td></tr></table></figure>
+                <h1 id="start"><a href="#start" class="headerlink" title="start"></a>start</h1><p>使用平台：apollo 云平台</p>
+<h2 id="workflow"><a href="#workflow" class="headerlink" title="workflow"></a>workflow</h2><p>在<code>model/planning/traffic_rules/</code>下面新建<code>region_speed</code>的文件夹<br>使用<code>buildtool</code>构建plugin</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">buildtool create --template plugin \<br>                 --namespaces planning \<br>                 --name region-speed-limit \<br>                 --base_class_name TrafficRule modules/planning/traffic_rules/region_speed_limit \<br>                 --config_message_name RegionSpeedLimitConfig<br></code></pre></td></tr></table></figure>
 
-<p>在网页打开，启动Sim_control, PNC monitor<br><img src="/image.png" srcset="/img/loading.gif" lazyload alt="场景"><br>打开<code>planning, Predicting, routing</code>模块</p>
-<p>打开路由，发送路由请求</p>
-<p>在<code>profile/default/modules/planning/trafficrules/traffic_light/conf</code>中<br>找到.pb.txt的文件，更改<code>stop_distance</code> 然后重启planning模块<br><img src="/image-2.png" srcset="/img/loading.gif" lazyload alt="tfl config"></p>
-<p>在pnc-monitor可以观测到变化<br><img src="/image-1.png" srcset="/img/loading.gif" lazyload alt="before"><br><img src="/image-3.png" srcset="/img/loading.gif" lazyload alt="after"></p>
-<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>暂时还没看出哪里有变化，即使改变了参数，不知道从哪里看出变化</p>
+<p>可以得到如下结构</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs text"><br>modules/planning/region_speed/<br>|-- BUILD<br>|-- conf<br>|   `-- default_conf.pb.txt<br>|-- cyberfile.xml<br>|-- plugin_region_speed.xml<br>|-- proto<br>|   |-- BUILD<br>|   `-- region_speed.proto<br>|-- region_speed.cc<br>`-- region_speed.h<br><br></code></pre></td></tr></table></figure>
+
+<p>然后是对<code>region_speed.cc</code>和<code>region_speed.h</code>的更改</p>
+<p>首先，要想实现添加交通规则，需要有个<code>ApplyRule</code>的函数，在头文件如下</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-comment">// ... include and namespace </span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">RegionSpeed</span>: <span class="hljs-keyword">public</span> TrafficRule&#123;<br><span class="hljs-keyword">public</span>:<br>  <span class="hljs-comment">// ...</span><br>  <span class="hljs-function">common::Status <span class="hljs-title">ApplyRule</span><span class="hljs-params">(Frame* <span class="hljs-type">const</span> frame, ReferenceLineInfo* <span class="hljs-type">const</span> reference_line_info)</span></span>;<br>  <br><span class="hljs-keyword">private</span>:<br>  RegionSpeedLimitConfig config_;<br><br>&#125;<br><br></code></pre></td></tr></table></figure>
+<p>对于添加规则的实现就是在<code>region_speed.cc</code>中实现</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><br><span class="hljs-function">Status <span class="hljs-title">RegionSpeedLimit::ApplyRule</span><span class="hljs-params">(Frame* <span class="hljs-type">const</span> frame, ReferenceLineInfo* <span class="hljs-type">const</span> reference_line_info)</span> </span>&#123;<br>    ReferenceLine* reference_line = reference_line_info-&gt;<span class="hljs-built_in">mutable_reference_line</span>();<br>    <span class="hljs-type">const</span> std::vector&lt;PathOverlap&gt;&amp; pnc_junction_overlaps<br>            = reference_line_info-&gt;<span class="hljs-built_in">reference_line</span>().<span class="hljs-built_in">map_path</span>().<span class="hljs-built_in">pnc_junction_overlaps</span>();<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">const</span> <span class="hljs-keyword">auto</span>&amp; pnc_junction_overlap : pnc_junction_overlaps) &#123;<br>        reference_line-&gt;<span class="hljs-built_in">AddSpeedLimit</span>(<br>                pnc_junction_overlap.start_s - config_.forward_buffer(),<br>                pnc_junction_overlap.end_s + config_.<span class="hljs-built_in">backward_buffer</span>(),<br>                config_.<span class="hljs-built_in">limit_speed</span>());<br>    &#125;<br>    <span class="hljs-keyword">return</span> Status::<span class="hljs-built_in">OK</span>();<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>其中config_中的<code>backward_buffer</code>和<code>forward_buffer</code>是在<code>conf/default_conf.pb.txt</code>中定义的</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs text">forward_buffer: 3.0<br>backward_buffer: 2.0<br>limit_speed: 15.0<br></code></pre></td></tr></table></figure>
+<p>接下来只要编译就可以了</p>
 
                 
               </div>
@@ -310,8 +312,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>traffic-light</div>
-      <div>http://tabbleman.github.io/2023/10/20/apollo-2023-10-20-traffic-light/</div>
+      <div>region_speed</div>
+      <div>http://tabbleman.github.io/2023/10/27/apollo-2023-10-27-region-speed/</div>
     </div>
     <div class="license-meta">
       
@@ -323,7 +325,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>October 20, 2023</div>
+          <div>October 27, 2023</div>
         </div>
       
       
@@ -355,18 +357,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/27/apollo-2023-10-27-region-speed/" title="region_speed">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">region_speed</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/10/16/daily-2023-10-16/" title="Mon Oct 16 2023 00:00:00 GMT+0800 (China Standard Time)">
-                        <span class="hidden-mobile">Mon Oct 16 2023 00:00:00 GMT+0800 (China Standard Time)</span>
+                      <a href="/2023/10/20/apollo-2023-10-20-traffic-light/" title="traffic-light">
+                        <span class="hidden-mobile">traffic-light</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

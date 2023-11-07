@@ -4,6 +4,46 @@
   
   
   <entry>
+    <title>gdb-server</title>
+    <link href="/2023/11/07/os-2023-11-07-gdb-server/"/>
+    <url>/2023/11/07/os-2023-11-07-gdb-server/</url>
+    
+    <content type="html"><![CDATA[<h1 id="gdb"><a href="#gdb" class="headerlink" title="gdb"></a>gdb</h1><p>作为gnu系列强大的一个工具，gdb有着无数的feature等着我来探索。</p><p>今天心血来潮在debug <a href="https://github.com/antirez/kilo">kili</a>的时候，由于kilo是一个终端的编辑器，导致在我在debug的时候会让kilo窗口与debug窗口重叠，这时候我突然想到了在写xv6-lab的时候qemu-gdb。<br>于是我赶紧去翻了翻gdb的手册，果然在<a href="https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_125.html">这里</a>找到了。</p><h2 id="介绍gdbserver"><a href="#介绍gdbserver" class="headerlink" title="介绍gdbserver"></a>介绍gdbserver</h2><p>gdbserver是个能在从属机器(或者是进程)上面建立一个连接服务器(设备的串口连接如&#x2F;dev&#x2F;sda0或者是网络的tcp连接如127.0.0.1:11451)的命令</p><p>具体用法如下, 参考<a href="https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_130.html#SEC135">gdbserver</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">gdbserver &lt;connection&gt; exe [parameters, argv...]<br></code></pre></td></tr></table></figure><p>介绍以下， @connection是要建立的服务器的地址，可以是设备，也可以是本纪的一个端口<br>在另外一个机器或者进程上，在gdb里面使用</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">target remote &lt;connection&gt;<br></code></pre></td></tr></table></figure><p>就可以进行连接了</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>gdb</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>xv6-2020-fall-lab</title>
+    <link href="/2023/11/01/os-2023-11-01-xv6-2020-fall-lab/"/>
+    <url>/2023/11/01/os-2023-11-01-xv6-2020-fall-lab/</url>
+    
+    <content type="html"><![CDATA[<h1 id="lab-1-util"><a href="#lab-1-util" class="headerlink" title="lab 1 util"></a>lab 1 util</h1><p>todo </p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>os</tag>
+      
+      <tag>xv6</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>region_speed</title>
     <link href="/2023/10/27/apollo-2023-10-27-region-speed/"/>
     <url>/2023/10/27/apollo-2023-10-27-region-speed/</url>

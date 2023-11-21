@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>intro</title>
+    <link href="/2023/11/21/gtl-intro/"/>
+    <url>/2023/11/21/gtl-intro/</url>
+    
+    <content type="html"><![CDATA[<p>开的新坑，”大翻译”运动。</p><h1 id="index"><a href="#index" class="headerlink" title="index"></a>index</h1><h2 id="xv6"><a href="#xv6" class="headerlink" title="xv6"></a><a href="./xv6/">xv6</a></h2><h2 id="paper"><a href="#paper" class="headerlink" title="paper"></a><a href="./paper/">paper</a></h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>gtl</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>gdb-server</title>
     <link href="/2023/11/07/os-2023-11-07-gdb-server/"/>
     <url>/2023/11/07/os-2023-11-07-gdb-server/</url>
@@ -15,25 +34,6 @@
     <tags>
       
       <tag>gdb</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>intro</title>
-    <link href="/2023/11/01/gtl-intro/"/>
-    <url>/2023/11/01/gtl-intro/</url>
-    
-    <content type="html"><![CDATA[<p>开的新坑，”大翻译”运动。</p><h1 id="index"><a href="#index" class="headerlink" title="index"></a>index</h1><h2 id="xv6"><a href="#xv6" class="headerlink" title="xv6"></a><a href="./xv6/">xv6</a></h2><h2 id="paper"><a href="#paper" class="headerlink" title="paper"></a><a href="./paper/">paper</a></h2>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>gtl</tag>
       
     </tags>
     
